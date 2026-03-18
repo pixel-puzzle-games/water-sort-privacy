@@ -1,25 +1,201 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head><meta charset="UTF-8"><title>Water Short - Gizlilik Politikası</title>
-<style>body{font-family:Arial,sans-serif;max-width:800px;margin:40px auto;padding:0 20px;line-height:1.6;color:#333}</style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Water Short – Gizlilik Politikası</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f4f6fb;
+      color: #222;
+      line-height: 1.75;
+    }
+    header {
+      background: linear-gradient(135deg, #1a0a3c, #3b1fa8);
+      color: white;
+      padding: 48px 20px 32px;
+      text-align: center;
+    }
+    header h1 { font-size: 2rem; margin-bottom: 8px; }
+    header p  { opacity: 0.75; font-size: 0.95rem; }
+    .container {
+      max-width: 860px;
+      margin: 40px auto;
+      padding: 0 20px 60px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 32px 36px;
+      margin-bottom: 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    }
+    h2 {
+      font-size: 1.15rem;
+      color: #3b1fa8;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #ede8ff;
+    }
+    p  { margin-bottom: 12px; font-size: 0.97rem; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    li { margin-bottom: 6px; font-size: 0.97rem; }
+    a  { color: #3b1fa8; }
+    .badge {
+      display: inline-block;
+      background: #ede8ff;
+      color: #3b1fa8;
+      border-radius: 20px;
+      padding: 3px 12px;
+      font-size: 0.82rem;
+      margin-right: 6px;
+      margin-bottom: 6px;
+    }
+    .highlight {
+      background: #f0fdf4;
+      border-left: 4px solid #22c55e;
+      padding: 14px 18px;
+      border-radius: 6px;
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+    }
+    footer {
+      text-align: center;
+      color: #888;
+      font-size: 0.85rem;
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>
-<h1>Water Short – Gizlilik Politikası</h1>
-<p><strong>Son güncelleme:</strong> 18 Mart 2026</p>
 
-<h2>Veri Toplama</h2>
-<p>Water Short uygulaması, oyun ilerlemesi ve ayarları için cihazınızda yerel depolama kullanır.
-Firebase Anonymous Authentication aracılığıyla rastgele bir kullanıcı kimliği oluşturulabilir;
-bu kimlik kişisel bilgi içermez.</p>
+<header>
+  <h1>🎮 Water Short</h1>
+  <p>Gizlilik Politikası &nbsp;|&nbsp; Son güncelleme: 18 Mart 2026</p>
+</header>
 
-<h2>Reklam</h2>
-<p>Uygulama, Google AdMob tarafından sunulan reklamlar içerebilir.
-AdMob'un gizlilik politikası için: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></p>
+<div class="container">
 
-<h2>Çocukların Gizliliği</h2>
-<p>Bu uygulama 13 yaşın altındaki çocuklardan bilerek kişisel veri toplamaz.</p>
+  <div class="card">
+    <h2>1. Genel Bakış</h2>
+    <p>
+      Water Short ("Uygulama"), su sıralama bulmaca oyunu olarak sunulan bir mobil uygulamadır.
+      Bu Gizlilik Politikası, uygulamayı kullandığınızda hangi verilerin toplandığını,
+      nasıl kullanıldığını ve haklarınızın neler olduğunu açıklar.
+    </p>
+    <div class="highlight">
+      ✅ Bu uygulama <strong>ad, soyad, e-posta, telefon numarası veya konum</strong> gibi
+      kişisel tanımlayıcı bilgiler <strong>toplamaz</strong>.
+    </div>
+  </div>
 
-<h2>İletişim</h2>
-<p>Sorularınız için: <strong>gokhanzaim@gmail.com</strong></p>
+  <div class="card">
+    <h2>2. Toplanan Veriler</h2>
+    <p>Uygulama yalnızca aşağıdaki teknik verileri işler:</p>
+    <ul>
+      <li><strong>Anonim Kullanıcı Kimliği:</strong> Firebase Anonymous Authentication tarafından
+          rastgele üretilir; gerçek kimliğinizle ilişkilendirilemez.</li>
+      <li><strong>Oyun İlerlemesi:</strong> Açık bölümler, yıldız puanları, tamamlanan bölüm sayısı.</li>
+      <li><strong>Uygulama Ayarları:</strong> Ses, titreşim gibi tercihler.</li>
+      <li><strong>Cihaz Teknik Bilgisi:</strong> İşletim sistemi sürümü ve cihaz modeli
+          (yalnızca hata ayıklama için, Google Firebase Crashlytics aracılığıyla).</li>
+    </ul>
+    <p><span class="badge">Kişisel veri YOK</span><span class="badge">Konum YOK</span>
+       <span class="badge">Kamera/Mikrofon YOK</span><span class="badge">Kişiler YOK</span></p>
+  </div>
+
+  <div class="card">
+    <h2>3. Verilerin Kullanım Amacı</h2>
+    <ul>
+      <li>Oyun ilerlemesini bulut üzerinde kaydetmek ve cihazlar arası senkronizasyon sağlamak</li>
+      <li>Skor tablosu ve liderlik listesi özelliklerini sunmak</li>
+      <li>Uygulama hatalarını tespit etmek ve düzeltmek</li>
+      <li>Oyun deneyimini geliştirmek için anonim kullanım istatistikleri analiz etmek</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>4. Üçüncü Taraf Hizmetler</h2>
+    <p>Uygulama aşağıdaki üçüncü taraf hizmetleri kullanmaktadır:</p>
+    <ul>
+      <li>
+        <strong>Google Firebase (Authentication, Realtime Database, Crashlytics):</strong>
+        Anonim kimlik yönetimi ve bulut kayıt. Firebase gizlilik politikası:
+        <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a>
+      </li>
+      <li>
+        <strong>Google AdMob:</strong> Uygulama içi reklam gösterimi.
+        AdMob, cihaz tanımlayıcısı ve reklamla etkileşim verisi toplayabilir.
+        AdMob gizlilik politikası:
+        <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a>
+      </li>
+      <li>
+        <strong>Google Play Hizmetleri:</strong> Platform altyapısı.
+        <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>5. Veri Saklama ve Güvenlik</h2>
+    <p>
+      Oyun ilerleme verileri Firebase Realtime Database'de şifreli bağlantı (TLS/SSL) üzerinden
+      iletilir ve saklanır. Anonim kimliğiniz yalnızca kendi verilerinize erişim sağlar;
+      başka kullanıcıların verilerine erişilemez.
+    </p>
+    <p>
+      Uygulamayı kaldırdığınızda cihazınızdaki yerel veriler silinir.
+      Bulut verilerinin silinmesini talep etmek için bizimle iletişime geçebilirsiniz.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>6. Çocukların Gizliliği</h2>
+    <p>
+      Water Short, genel kitleye yönelik bir bulmaca oyunudur.
+      Uygulama, 13 yaşın altındaki çocuklardan bilerek kişisel veri toplamaz.
+      Ebeveynler veya veliler, çocuklarına ait olduğunu düşündükleri verilerin
+      silinmesini talep edebilir.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>7. Kullanıcı Hakları</h2>
+    <p>Aşağıdaki haklara sahipsiniz:</p>
+    <ul>
+      <li><strong>Erişim hakkı:</strong> Hakkınızda tutulan verileri öğrenebilirsiniz.</li>
+      <li><strong>Silme hakkı:</strong> Bulut kayıt verilerinizin silinmesini talep edebilirsiniz.</li>
+      <li><strong>İtiraz hakkı:</strong> Reklam kişiselleştirmesini cihaz ayarlarından kapatabilirsiniz.</li>
+    </ul>
+    <p>Talepleriniz için aşağıdaki iletişim adresini kullanabilirsiniz.</p>
+  </div>
+
+  <div class="card">
+    <h2>8. Politika Güncellemeleri</h2>
+    <p>
+      Bu politika zaman zaman güncellenebilir. Önemli değişiklikler uygulama içi bildirim
+      veya bu sayfa üzerinden duyurulacaktır. Güncel tarihi her zaman sayfanın üstünde bulabilirsiniz.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>9. İletişim</h2>
+    <p>
+      Gizlilik politikasına ilişkin soru veya talepleriniz için:
+    </p>
+    <p>
+      📧 <strong>your@email.com</strong>
+    </p>
+    <p>En geç 30 gün içinde yanıt verilecektir.</p>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Water Short. Tüm hakları saklıdır.
+</footer>
+
 </body>
 </html>
