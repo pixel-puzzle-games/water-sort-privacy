@@ -330,18 +330,17 @@
 
 <script>
   function setLang(lang) {
-    document.documentElement.lang = lang;
-    document.querySelectorAll('[data-lang]').forEach(el => {
-      el.style.display = el.dataset.lang === lang ? '' : 'none';
-    });
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-      btn.classList.toggle('active', btn.textContent.toLowerCase().includes(lang === 'tr' ? 'türkçe' : 'english'));
-    });
-  }
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-lang]').forEach(el => {
+    el.style.display = el.dataset.lang === lang ? 'block' : 'none';
+  });
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.textContent.toLowerCase().includes(lang === 'tr' ? 'türkçe' : 'english'));
+  });
+}
 
-  // Tarayıcı diline göre otomatik seç, varsayılan TR
-  const browserLang = navigator.language || navigator.userLanguage;
-  setLang(browserLang.startsWith('en') ? 'en' : 'tr');
+const browserLang = navigator.language || navigator.userLanguage;
+setLang(browserLang.startsWith('en') ? 'en' : 'tr');
 </script>
 </body>
 </html>
